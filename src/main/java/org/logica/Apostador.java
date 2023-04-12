@@ -4,13 +4,13 @@ public class Apostador {
     private int doc;
     private String nombre;
     private String apellido;
-    private String apuesta;
+    private Pronostico pronostico;
 
-    public Apostador(int doc, String nombre, String apellido, String apuesta) {
+    public Apostador(int doc, String nombre, String apellido, Pronostico pronostico) {
         this.doc = doc;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.apuesta = apuesta;
+        this.pronostico = pronostico;
     }
 
     public int getDoc() {
@@ -25,16 +25,17 @@ public class Apostador {
         return apellido;
     }
 
-    public String getApuesta() {
-        return apuesta;
+    public Pronostico getPronostico() {
+        return pronostico;
     }
 
     @Override
     public String toString() {
-        return "Apostador{" + "doc=" + doc +
+        return "Apostador{" +
+                "doc=" + doc +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
-                ", apuesta='" + apuesta + '\'' +
+                ", pronostico=" + pronostico +
                 '}';
     }
 }

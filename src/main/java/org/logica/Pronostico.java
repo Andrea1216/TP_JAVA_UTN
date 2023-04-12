@@ -11,6 +11,18 @@ public class Pronostico {
         this.resultado = resultado;
     }
 
+    public Partido getPartido() {
+        return partido;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public ResultadoEnum getResultado() {
+        return resultado;
+    }
+
     public int puntos(){
         return 0;
     }
